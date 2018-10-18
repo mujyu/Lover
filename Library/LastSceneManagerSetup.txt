@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Lover/Lover.unity
+  isLoaded: 1
+  isActive: 1

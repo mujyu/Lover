@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C2355060-E83E-EBD3-4F7E-9E9522D27B47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_12;UNITY_2018_2;UNITY_2018;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>F:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>F:\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Utage\Sample\Scripts\AutoStartGame.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleChapterTitle.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleCharacterGrayOutControllerRecieveMessage.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleChatLog.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleChatLogItem.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleCheckUnity56Newer.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleCustomCommand.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleCustomCommandParam.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleJumpButton.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleLoadError.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SamplePageEvent.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleParam.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\SampleSendMessageByName.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\UnityChanFaceUpdateSimple.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\UtageRecieveMessageFromAdvComannd.cs" />
+     <Compile Include="Assets\Utage\Sample\Scripts\UtageRecieveMessageSample.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\AutoBlink.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\AutoBlinkforSD.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\FaceUpdate.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\IdleChanger.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\IKCtrlRightHand.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\IKLookAt.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\RandomWind.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\SpringBone.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\SpringCollider.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\SpringManager.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Utage\Sample\UnityChan\SD_unitychan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\Utage\SampleOthers\DrawerTest.cs" />
+     <Compile Include="Assets\Utage\SampleOthers\SampleCustomAssetBundleLoad.cs" />
+     <Compile Include="Assets\Utage\SampleOthers\SampleTips.cs" />
+     <Compile Include="Assets\Utage\SampleOthers\UtageSampleLoadCaharacter.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\AdvEngine.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\AdvEngineStarter.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\AdvEngineStarterApp.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\AdvCommand.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\AdvCommandError.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\AdvCommandParser.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\AdvCustomCommandManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandBg.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandBgEvent.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandBgEventOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandBgOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandCharacter.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandCharacterOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandLayerOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandLayerReset.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandParticle.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandParticleOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandSprite.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandSpriteOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandText.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Grahic\AdvCommandVideo.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandElse.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandElseIf.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndIf.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndPage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndScenario.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndSceneGallery.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndSubroutine.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandEndTread.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandIf.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJump.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJumpRandom.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJumpRandomEnd.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJumpSubroutine.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJumpSubroutineRandom.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandJumpSubroutineRandomEnd.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandPageControler.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandParam.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandPauseScenario.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandScenarioLabel.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandSelection.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandSelectionClick.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandSelectionClickEnd.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Logic\AdvCommandSelectionEnd.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandAmbience.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandBgm.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandChangeSoundVolume.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandSe.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandStopAmbience.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandStopBgm.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandStopSe.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandStopSound.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandStopVoice.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Sound\AdvCommandVoice.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\AdvCommandHideMenuButton.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\AdvCommandHideMessageWindow.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\AdvCommandShowMenuButton.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\AdvCommandShowMessageWindow.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\GUI\AdvCommandGuiActive.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\GUI\AdvCommandGuiPosition.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\GUI\AdvCommandGuiReset.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\GUI\AdvCommandGuiSize.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\MessageWindow\AdvCommandMessageWindowChange.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\UI\MessageWindow\AdvCommandMessageWindowInit.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandCaptureImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandMovie.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandThread.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandVibrate.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandWait.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandWaitBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandWaitCustom.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandWaitInput.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\AdvCommandWaitThread.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandEffectBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandFadeBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandFadeIn.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandFadeOut.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandImageEffect.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandImageEffectBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandImageEffectOff.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandPlayAnimation.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandRuleFadeIn.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandRuleFadeOut.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandShake.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandTween.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Effect\AdvCommandZoomCamera.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Extra\AdvCommandSendMessage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Command\Wait\Extra\AdvCommandSendMessageByName.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvChapterData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvColumnName.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvDataManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvImportBook.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvImportScenarios.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvImportScenarioSheet.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvParser.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvSettingDataManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\AdvSheetParser.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvAnimationSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvBootSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvCgGalleryData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvCharacterInfo.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvCharacterSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvEyeBlinkSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvLayerSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvLipSynchSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvLocalizeSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvParticleSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvSceneGallerySetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvSettingBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvSettingDictionayBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvSoundSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvTextureSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvVideoCommandSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvVideoSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\AdvVoiceSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\IAdvSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\IAdvSettingData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\Param\AdvParamData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\Param\AdvParamManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\Param\AdvParamStruct.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\DataManager\SettingData\Param\AdvParamStructTbl.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Effect\AdvAnimationPlayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Effect\AdvEffectManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Effect\AdvITweenPlayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvAgingTest.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvBackLogFilter.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvCharacterGrayOutController.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvLoadScene.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvSelectionTimeLimit.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvSelectionTimeLimitText.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvTextSound.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Extra\AdvVideoLoadPathChanger.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicGroup.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicInfo.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicInfoList.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicLayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\AdvGraphicOperationArg.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\ClickEvent\AdvClickEvent.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\ClickEvent\IAdvClickEvent.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\AdvEffectColor.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\AdvGraphicBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\AdvGraphicLoader.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\AdvGraphicObject.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObject2DPrefab.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObject3DPrefab.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObjectCustom.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObjectCustom2D.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObjectParticle.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\AdvGraphicObjectPrefabBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\IAdvGraphicObjectCustom.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\Prefab\IAdvGraphicObjectCustomCommand.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\RenderTexture\AdvGraphicObjectRenderTextureImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\RenderTexture\AdvGraphicRenderTextureManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\RenderTexture\AdvRenderTextureMode.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\RenderTexture\AdvRenderTextureSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\RenderTexture\AdvRenderTextureSpace.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\UIGraphic\AdvGraphicObjectAvatar.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\UIGraphic\AdvGraphicObjectDicing.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\UIGraphic\AdvGraphicObjectRawImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\UIGraphic\AdvGraphicObjectUguiBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Object\UIGraphic\AdvGraphicObjectVideo.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Transition\AdvTransitionArgs.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Transition\IAdvFade.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Graphic\Video\AdvVideoManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Language\AdvErrorMsg.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\AdvConfig.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\AdvPage.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\AdvPageController.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\BackLog\AdvBacklog.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\BackLog\AdvBacklogManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\MessageWindow\AdvMessageWindow.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\MessageWindow\AdvMessageWindowManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\MessageWindow\IAdvMessageWindow.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\Selection\AdvSelection.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Logic\Selection\AdvSelectionManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvConfigSaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvGallerySaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvReadHistorySaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvSaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvSaveManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvSelectedHistorySaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\AdvSystemSaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Save\IAdvSaveData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvEntityData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvIfData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvIfManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvJumpManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvMacroData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvMacroManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioDataExported.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioJumpData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioLabelData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioPageData.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioPlayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvScenarioThread.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\Scenario\AdvWaitManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiBacklog.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiBacklogManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiLoadGraphicFile.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiMessageWindow.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiMessageWindowFaceIcon.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiMessageWindowManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiSelection.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUguiSelectionManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\AdvUiManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\GUI\AdvGuiBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\ADV\UI\GUI\AdvGuiManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Binary\BinaryBuffer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Binary\BinaryIOExtensions.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Binary\BinaryUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Camera\CameraManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Camera\CameraRoot.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Camera\CaptureCamera.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Camera\LetterBoxCamera.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\BootCustomProjectSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\CustomProjectSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\Language\ErrorMsg.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\Language\LanguageData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\Language\LanguageManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\Language\LanguageManagerBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\CustomProjectSetting\Language\SystemText.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Dictionary\SerializableDictionary.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Dictionary\SerializableDictionaryBinaryIO.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Dictionary\SerializableDictionaryFileRead.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\DecoratorDrawerEx.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Decroator\HelpBoxAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\DrawerUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\PropertyDrawerEx.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\AddButtonAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\ButtonAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\EnuFlagsAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\FolderAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\HideAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\HorizontalAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\InterfaceAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\IntPopupAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\LimitEnumAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\MinAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\MinMaxAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\NotEditableAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\OverridePropertyDrawAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\PathDialogAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\RecordableListAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\StringPopupAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\StringPopupFunctionAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\StringPopupIndexedAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\EditorDrawer\Propety\UpdateFunctionAttribute.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\Animation\UguiAnimation.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\Animation\UguiAnimationAlpha.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\CurveAnimation.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\LinkTransform.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\MiniAnimationData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\MosaicRenderer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\MotionPlayType.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\ParticleAutomaticDestroyer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Effect\ParticleScaler.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Events\ApplicationEvent.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Events\EventUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Expression\ExpressionCast.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Expression\ExpressionParser.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Expression\ExpressionToken.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ExtensionMethods\ExtensionMethods.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetBundleHelper.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetBundleInfoManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFileManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFileManagerInEditor.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFileManagerSettings.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFileManagerSingleton.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFilePathInfo.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\AssetFileReference.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\Compression.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\ConvertFileList.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\ConvertFileListManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\Crypt.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\CustomLoadManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\FileIOManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\FileIOManagerBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\FilePathUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFile.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFileBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFileDummyOnLoadError.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFileUtage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFileUtageInfo.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\AssetFileUtageManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\UtageFile\StaticAssetManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\File\WWWEx.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Base\IImageEffectStrength.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Base\ImageEffectBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Base\ImageEffectSingelShaderBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Base\ImageEffectUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Bloom.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Blur.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\ColorFade.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\FishEye.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Grayscale.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Mosaic.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\MotionBlur.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Negaposi.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\ScreenOverlay.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\SepiaTone.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Twirl.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\ImageEffects\Variations\Vortex.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\iTween\iTweenData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\iTween\Plugins\iTween.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Math\EaseType.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Math\Easing.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Shader\ShaderManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundAudio.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundAudioPlayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundGroup.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundManager.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundManagerSystem.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Sound\SoundManagerSystemInterface.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\StringGrid\StringGrid.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\StringGrid\StringGridContainer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\StringGrid\StringGridDictionary.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\StringGrid\StringGridList.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\StringGrid\StringGridRow.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\CloudBuildManifest.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\DebugPauseEditor.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\DebugPrint.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\IndicatorIcon.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUi.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUiDebugMenu.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUiDialog1Button.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUiDialog2Button.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUiDialog3Button.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\SystemUI\SystemUiFramerateChanger.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Text\CharData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Text\TextData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Text\TextParser.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Timer\Timer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Timer\WaitTimer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Effect\UguiCrossFadeDicing.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Effect\UguiCrossFadeRawImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Effect\UguiFlip.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Effect\UguiRichOutline.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Effect\UguiTransition.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\AvatarData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\AvatarFolderData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\AvatarImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\AvatarPattern.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\EyeBlinkAvatar.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Avatar\LipSynchAvatar.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\DicingAnimation.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\DicingImage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\DicingTextureData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\DicingTextures.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\EyeBlinkDicing.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\Dicing\LipSynchDicing.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\EyeBlinkBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\LipSynch2d.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Image\LipSynchBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\AlignGroup\UguiAlignGroup.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\AlignGroup\UguiHorizontalAlignGroup.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\AlignGroup\UguiHorizontalAlignGroupScaleEffect.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\AlignGroup\UguiVerticalAlignGroup.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\AlignGroup\UguiVerticalAlignGroupScaleEffect.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\UguiLayoutControllerBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\UguiLetterBoxCanvasScaler.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\LayoutController\UguiSizeFitter.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Localize\UguiLocalizeBase.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Localize\UguiLocalizeRectTransform.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\Localize\UguiLocalizeTextSetting.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelText.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextBrPageIcon.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextCharacter.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextEmojiData.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextEventTrigger.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextFontInfoBuilder.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextGenerator.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextGeneratorAdditional.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextGeneratorAdditionalLine.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextGeneratorAdditionalRuby.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextGeneratorInfo.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextHitArea.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextLine.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\NovelText\UguiNovelTextSettings.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiBackgroundRaycaster.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiBackgroundRaycastReciever.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiButtonSe.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiCategoryGridPage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiFadeTextureStream.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiGridPage.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiIgnoreRaycaster.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiListView.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiLocalize.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\UguiToggleGroupIndexed.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\View\ITransition.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\View\UguiView.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\UI\View\UguiViewTransitionCrossFade.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\Alignment.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\ColorUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\DontDestoryOnLoad.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\EditorSub\AssetBuildTimeStamp.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\EditorSub\EditorPrefsUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\EditorSub\LayerMaskEditor.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\EditorSub\UtageEditorPrefs.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\ExtensionUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\FlagsUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\InputUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\LinearValue.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\ListPool.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\ObjectPool.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\ParserUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\PivotUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\TimeUtil.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Util\UtageToolKit.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Wrapper\WrapperMoviePlayer.cs" />
+     <Compile Include="Assets\Utage\Scripts\GameLib\Wrapper\WrapperUnityVersion.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiCgGallery.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiCgGalleryItem.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiCgGalleryViewer.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiGallery.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiSceneGallery.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiSceneGalleryItem.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiSoundRoom.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\Gallery\UtageUguiSoundRoomItem.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiBoot.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiConfig.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiConfigTaggedMasterVolume.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiLoadWait.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiMainGame.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiSaveLoad.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiSaveLoadItem.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiSkipButtonState.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiStartChapter.cs" />
+     <Compile Include="Assets\Utage\Scripts\TemplateUI\UtageUguiTitle.cs" />
+     <Compile Include="Assets\Utage\Scripts\Version.cs" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Blur.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\RuleFade\Utage-UI-RuleFade.shader" />
+     <None Include="Assets\Utage\LocalizeText\SystemText.txt" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-NegaPosi.shader" />
+     <None Include="Assets\Utage\Sample\ParticleExamples\SurfaceShader_VC.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\readme.txt" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-MotionBlur.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Bloom.shader" />
+     <None Include="Assets\Utage\Scripts\GameLib\iTween\Plugins\ReadMe!\iTweenLicense.txt" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Fisheye.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Vortex.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\RendetTexture\Utage-RenderTexture.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\RendetTexture\Utage-DrawByRenderTexture.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Sepiatone.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Twirl.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\CharaMain.cginc" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-ColorFade.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\CharaSkin.cginc" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\Utage\LocalizeText\ExampleText.txt" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Grayscale.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\Utage\Notice.txt" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\ImageEffect\Utage-ImageEffect-Mosaic.shader" />
+     <None Include="Assets\Utage\Scripts\GameLib\iTween\Plugins\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\CharaOutline.cginc" />
+     <None Include="Assets\Utage\ReadMe.txt" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Utage\Sample\UnityChan\SD_unitychan\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\Utage\LocalizeText\ErrorMsg.txt" />
+     <None Include="Assets\Utage\LocalizeText\AdvErrorMsg.txt" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\GrabPass\Utage-GrabPass-Mosaic.shader" />
+     <None Include="Assets\Utage\Resources\Utage-Shader\CrossFade\Utage-CrossFadeImage.shader" />
+     <None Include="Assets\Utage\Sample\ReadMe.txt" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>F:/SourceTree/Lover/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>F:/SourceTree/Lover/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>F:/SourceTree/Lover/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>F:/SourceTree/Lover/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>F:/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/user/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/user/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>F:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

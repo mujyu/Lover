@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f183272568e6f94382e3b59c0de76cd, type: 3}
+  m_Name: Lover.project
+  m_EditorClassIdentifier: 
+  excelList: []
+  chapterDataList:
+  - chapterName: Boot
+    excelList:
+    - {fileID: 102900000, guid: 42c41319c7161ab4fb28a16f523df1e8, type: 3}
+    excelDir: {fileID: 0}
+  checkWaitType: 0
+  checkWhiteSpaceEndOfCell: 1
+  checkTextCount: 1
+  scenarios: {fileID: 11400000, guid: d973f65502620c044896c3255a02a7e5, type: 2}
+  autoImportType: 0
+  convertPath: 
+  convertVersion: 0
+  isAutoUpdateVersionAfterConvert: 0
+  isAutoConvertOnImport: 0
+  customInportSpriteFolders:
+  - {fileID: 102900000, guid: 0e7b5755ac877904e81b2b63834bed4d, type: 3}
+  - {fileID: 102900000, guid: da5c062ee9e56b94e930fc7579318f59, type: 3}
+  - {fileID: 102900000, guid: cb0c50140f674c540a27aa7474844f70, type: 3}
+  - {fileID: 102900000, guid: 24f32baf410e5b140b8c860dd92f5f2a, type: 3}
+  - {fileID: 102900000, guid: c0546ccf7c98db44fba51d19a9662f39, type: 3}
+  customInportAudioFolders:
+  - {fileID: 102900000, guid: b665a036d6582664caa1dd0e441bad8c, type: 3}
+  - {fileID: 102900000, guid: eb53ca9d78fb4944db21caee5a273137, type: 3}
+  - {fileID: 102900000, guid: 75e11447305cc6b48875500829a3096f, type: 3}
+  - {fileID: 102900000, guid: 7c4651d4257e91642b27a243d0f72642, type: 3}
+  customInportMovieFolders: []
+  quickImport: 0
+  parseFormula: 0
+  parseNumreic: 0
